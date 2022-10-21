@@ -511,9 +511,6 @@ body {
     width: calc(50% - 1rem);
     margin-bottom: 2rem;
   }
-  .subscribe__form {
-    justify-content: unset;
-  }
   .subscribe__input {
     flex-grow: unset;
   }
