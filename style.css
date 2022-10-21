@@ -511,6 +511,10 @@ body {
     width: calc(50% - 1rem);
     margin-bottom: 2rem;
   }
+  .subscribe__input {
+    flex-grow: unset;
+    padding-right: 0;
+  }
   .footer__container {
     flex-wrap: wrap;
   }

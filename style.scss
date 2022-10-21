@@ -600,6 +600,11 @@ body {
     }
   }
 
+  .subscribe__input {
+    flex-grow: unset;
+    padding-right: 0;
+  }
+
   .footer {
     &__container {
       flex-wrap: wrap;
