@@ -485,6 +485,11 @@ body {
     width: fit-content;
   }
 }
+@media screen and (min-width: 768px) {
+  .header__bars {
+    display: none;
+  }
+}
 
 @media screen and (max-width: 1023.98px) {
   .banner {
@@ -558,8 +563,63 @@ body {
 }
 
 @media screen and (max-width: 767.98px) {
+  .header {
+    padding-top: 2rem;
+  }
+
+  .header__bars {
+    padding: 1rem;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+
   .header__menu {
-    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 90%;
+    max-width: 300px;
+    background: rgb(255, 255, 255);
+    z-index: 9999;
+    display: block;
+    border-left: 1px solid #ddd;
+    padding: 50px 15px;
+    transition: all 0.2s linear;
+    transform: translateX(100%);
+    &-list {
+      display: block;
+    }
+
+    &-item {
+      // display: block;
+      margin-left: 0;
+      margin-bottom: 2rem;
+
+      &:last-child {
+        padding: 0;
+        margin-left: 0;
+        margin-bottom: 0;
+        &:hover {
+          background-color: unset;
+        }
+      }
+    }
+
+    &-link {
+      display: block;
+      padding: 10px;
+      transition: all 0.2 ease;
+      border-radius: 6px;
+      &:hover {
+        color: white;
+        background-color: $primary-color;
+      }
+    }
+  }
+
+  .header__menu.is-active {
+    transform: translateX(0%);
   }
 
   .category {
@@ -603,7 +663,7 @@ body {
   .subscribe__input {
     flex-grow: unset;
     padding-right: 0;
-    max-width: 180px;
+    max-width: 190px;
   }
 
   .subscribe__button {
@@ -621,6 +681,10 @@ body {
         margin-bottom: 3rem;
       }
     }
+  }
+
+  .feature__title {
+    font-size: 3.5rem;
   }
 }
 

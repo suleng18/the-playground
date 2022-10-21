@@ -426,6 +426,11 @@ body {
   width: fit-content;
 }
 
+@media screen and (min-width: 768px) {
+  .header__bars {
+    display: none;
+  }
+}
 @media screen and (max-width: 1023.98px) {
   .banner {
     padding: 5rem 0;
@@ -477,8 +482,56 @@ body {
   }
 }
 @media screen and (max-width: 767.98px) {
+  .header {
+    padding-top: 2rem;
+  }
+  .header__bars {
+    padding: 1rem;
+    font-size: 2rem;
+    cursor: pointer;
+  }
   .header__menu {
-    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 90%;
+    max-width: 300px;
+    background: rgb(255, 255, 255);
+    z-index: 9999;
+    display: block;
+    border-left: 1px solid #ddd;
+    padding: 50px 15px;
+    transition: all 0.2s linear;
+    transform: translateX(100%);
+  }
+  .header__menu-list {
+    display: block;
+  }
+  .header__menu-item {
+    margin-left: 0;
+    margin-bottom: 2rem;
+  }
+  .header__menu-item:last-child {
+    padding: 0;
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+  .header__menu-item:last-child:hover {
+    background-color: unset;
+  }
+  .header__menu-link {
+    display: block;
+    padding: 10px;
+    transition: all 0.2 ease;
+    border-radius: 6px;
+  }
+  .header__menu-link:hover {
+    color: white;
+    background-color: #ffc87a;
+  }
+  .header__menu.is-active {
+    transform: translateX(0%);
   }
   .category__item {
     width: 100%;
@@ -514,7 +567,7 @@ body {
   .subscribe__input {
     flex-grow: unset;
     padding-right: 0;
-    max-width: 180px;
+    max-width: 190px;
   }
   .subscribe__button {
     font-size: 1.4rem;
@@ -527,6 +580,9 @@ body {
   }
   .footer__item:first-child {
     margin-bottom: 3rem;
+  }
+  .feature__title {
+    font-size: 3.5rem;
   }
 }
 @media screen and (max-width: 374.98px) {
