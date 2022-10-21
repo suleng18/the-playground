@@ -515,6 +515,9 @@ body {
     flex-grow: unset;
     padding-right: 0;
   }
+  .subscribe__button {
+    font-size: 1.4rem;
+  }
   .footer__container {
     flex-wrap: wrap;
   }
