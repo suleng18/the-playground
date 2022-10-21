@@ -513,9 +513,11 @@ body {
   }
   .subscribe__input {
     flex-grow: unset;
+    padding-right: 0;
   }
   .subscribe__button {
     font-size: 1.4rem;
+    margin-right: 1rem;
   }
   .footer__container {
     flex-wrap: wrap;
