@@ -522,9 +522,9 @@ body {
   }
   .header__menu-link {
     display: block;
-    padding: 10px;
     transition: all 0.2 ease;
     border-radius: 6px;
+    padding: 15px;
   }
   .header__menu-link:hover {
     color: white;
