@@ -511,9 +511,12 @@ body {
     width: calc(50% - 1rem);
     margin-bottom: 2rem;
   }
+  .subscribe__form {
+    justify-content: unset;
+  }
   .subscribe__input {
     flex-grow: unset;
-    padding-right: 0;
+    padding-right: 2rem;
   }
   .subscribe__button {
     font-size: 1.4rem;
